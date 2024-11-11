@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body style="background-color: royalblue; color: white;">
+		<p id="A"></p>
+<script>
+const Names = ["ali", "Bilal", "Umer", "Ahman"];
+let size = Names.length;
+document.getElementById("A").innerHTML = size;
+</script>
+<br>
+<p id="B"></p>
+<script>
+const Name = ["ali", "Bilal", "Umer", "Ahman"];
+document.getElementById("B").innerHTML = Name.toString();
+</script>
+<br>
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="1"></p>
+<p id="2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("2").innerHTML = fruits;
+</script>
+
+<p>The push() method returns the new array length:</p>
+
+<p id="C"></p>
+<p id="C"></p>
+
+<script>
+const Num = ["11", "22", "33", "55"];
+
+document.getElementById("C").innerHTML = Num.push("66");
+document.getElementById("C").innerHTML = Num;C
+</script>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+<p id="D"></p>
+<p id="D"></p>
+
+<script>
+const Shift = ["10", "20", "30", "50"];
+document.getElementById("D").innerHTML = Shift;
+Shift.shift();
+document.getElementById("D").innerHTML = Shift;D
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+
+<table>
+	<tbody id="myTable">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+    </tr>
+
+    
+        
+    </tbody>
+</table>
+
+<script>
+	var a=prompt("enter how many rows you want to create")
+                    var ary=new Array(a);
+                
+	var myArray =  
+	[
+	    {'Id':'11', 'Name':'Ali', 'Age':'22', 'Class':'9th' },
+	    {'Id':'24', 'Name':'Bilal', 'Age':'32','Class':'30'},
+	    {'Id':'36', 'Name':'Ahmad', 'Age':'43','Class':'30'},
+	    {'Id':'48', 'Name':'Umer', 'Age':'24','Class':'30'},
+	    {'Id':'54', 'Name':'Irfan', 'Age':'55','Class':'30'},
+	    {'Id':'61', 'Name':'Saad', 'Age':'30','Class':'30'},
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i <a; i++)
+		{
+			var row = `<tr>
+							<td>${data[i].Id}</td>
+							<td>${data[i].Name}</td>
+							<td>${data[i].Age}</td>
+							<td>${data[i].Class}</td>
+					  </tr>`
+			table.innerHTML += row
+		}
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+</script>
+
+</body>
+</html>
+
+
+
+<!-- var myArray =  
+	[
+	    {'Id':'11', 'Name':'Ali', 'Age':'22', 'Class':'9th' },
+	    {'Id':'24', 'Name':'Bilal', 'Age':'32','Class':'30'},
+	    {'Id':'36', 'Name':'Ahmad', 'Age':'43','Class':'30'},
+	    {'Id':'48', 'Name':'Umer', 'Age':'24','Class':'30'},
+	    {'Id':'54', 'Name':'Irfan', 'Age':'55','Class':'30'},
+	    {'Id':'61', 'Name':'Saad', 'Age':'30','Class':'30'},
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i <a; i++)
+		{
+			var row = `<tr>
+							<td>${data[i].Id}</td>
+							<td>${data[i].Name}</td>
+							<td>${data[i].Age}</td>
+							<td>${data[i].Class}</td>
+					  </tr>`
+			table.innerHTML += row
+		} -->
